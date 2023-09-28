@@ -1,0 +1,3 @@
+[submodule "aws-sigv4"]
+	path = aws-sigv4
+	url = https://github.com/aws/SigV4-for-AWS-IoT-embedded-sdk
