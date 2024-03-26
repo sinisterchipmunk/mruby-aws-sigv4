@@ -11,7 +11,6 @@ MRuby::Gem::Specification.new('mruby-aws-sigv4') do |spec|
   spec.objs += srcs.map { |f| f.relative_path_from(dir).pathmap("#{build_dir}/%X.o") }
 
   spec.add_test_dependency 'mruby-print'
-  spec.add_dependency 'mruby-digest'
   spec.add_dependency 'mruby-time'
   spec.add_dependency 'mruby-sprintf'
 end

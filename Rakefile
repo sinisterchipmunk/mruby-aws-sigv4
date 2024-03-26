@@ -16,6 +16,7 @@ MRuby::Build.new do |conf|
   conf.gembox 'full-core'
   conf.gem File.expand_path(File.dirname(__FILE__)) do |g|
     g.cc.defines.delete 'SIGV4_DO_NOT_USE_CUSTOM_CONFIG'
+    g.add_dependency 'mruby-digest'
   end
   conf.enable_test
   conf.enable_debug
